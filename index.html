@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alicia Castiglione Photography</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- SWIPER STEP 1: ADD CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <script src="https://kit.fontawesome.com/12545a76f5.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Alicia Castiglione</h1>
+  </header>
+
+  <nav class="nav">
+    <button href="#" class="hamburger"><i class="fas fa-bars"></i></button>
+    <button class="close"><i class="fas fa-times"></i></button>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <div class="dropdown">
+      <a href="#">Photography</a>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="europe.html">Europe</a>
+        <a href="na.html">North America</a>
+        <a href="sa.html">South America</a>
+        <a href="asia.html">Asia</a>
+      </div>
+    </div>
+    <a href="#contact">Contact</a>
+  </nav>
+  <!-- Add your site content here. Keep it pretty and use indentation :) -->
+
+  <!-- HINT: Need to link to another page? Create a file with an html extension in your main project folder. -->
+  <!-- Then link to it using an anchor. for example: <a href="blog.html">Blog</a> -->
+  <!-- <img src="img/IMG_6010.jpg" alt="Ocean"> -->
+  <!-- <section class="ocean"></section> -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="img/IMG_6018.jpg">
+      </div>
+      <div class=" swiper-slide">
+        <img src="img/IMG_6078.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/IMG_5997.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/IMG_6101.jpg">
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev swiper-button-white"></div>
+    <div class="swiper-button-next swiper-button-white"></div>
+
+  </div>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate eos nisi necessitatibus aperiam dolorem ut eveniet quae dolores quisquam nulla, cumque tenetur blanditiis modi tempora excepturi error veniam suscipit dicta
+          praesentium
+          reiciendis illo obcaecati odit inventore minima. Pariatur facilis, excepturi! Facilis cumque dicta reiciendis nam accusantium cum pariatur sunt accusamus voluptas eaque sapiente totam dolorum nulla eligendi molestiae, quidem odit
+          repellat
+          temporibus quae ipsa aut placeat modi sint doloribus. Ipsum nisi veritatis, facere doloribus. Nihil veritatis corporis.</p>
+      </article>
+    </section>
+
+    <div class="gallery">
+      <div>
+        <img class="left-image" "overlay-wrapper" src="img/IMG_7973.jpg" alt="Positano">
+        <div class="overlay fade">Positano, Italy</div>
+      </div>
+      <div>
+        <img class="top-image" "top-overlay" src="img/IMG_8065.jpg" alt="Italy">
+        <div class="top-overlay fade-in">Atrani, Italy</div>
+
+        <img class="bottom-right" src="img/IMG_8003.jpg" alt="Amalfi">
+        <div class="bottom-overlay fade-bottom">Amalfi, Italy</div>
+      </div>
+    </div>
+
+    <div class="middle-gallery">
+      <div>
+        <img class="middle-wrapper-left" src="img/IMG_8000.jpg" alt="Amalfi">
+        <div class="middle-overlay-left fade-middle-left">Amalfi, Italy</div>
+      </div>
+      <div>
+        <img class="middle-wrapper-right" src="img/IMG_8149.jpg" alt="Positano">
+        <div class="middle-overlay-right fade-middle-right">Positano, Italy</div>
+      </div>
+    </div>
+
+    <div class="bottom-gallery">
+      <div>
+        <img class="top-left" src="img/IMG_8102.jpg" alt="Ravello">
+        <img class="bottom-left" src="img/IMG_7968.jpg" alt="Italy">
+      </div>
+      <div>
+        <img class="top-left" src="img/IMG_8140.jpg" alt="Ravello">
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <hr>
+    <nav>
+      <a href="https://www.instagram.com/alicia_castiglione/"><i class="fab fa-instagram"></i></a>
+    </nav>
+    <p class="myname">Alicia Castiglione Photography</p>
+
+    <a name="contact">
+      <form action="https://formspree.io/aliciacastiglione1980@gmail.com" method="POST">
+        <div class="footer-cols">
+          <div>
+            <input class="name" type="text" placeholder="name">
+            <input class="email" type="text" placeholder="email address">
+          </div>
+          <textarea type="text" placeholder="Message"></textarea>
+        </div>
+        <button type="subscribe">Contact</button>
+      </form>
+
+      <section>
+        <p class="copyright">&copy;2019 Alicia Castiglione</p>
+      </section>
+
+  </footer>
+
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <!-- SWIPER STEP 2: ADD JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" integrity="sha256-uckMYBvIGtce2L5Vf/mwld5arpR5JuhAEeJyjPZSUKY=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+
+</html>

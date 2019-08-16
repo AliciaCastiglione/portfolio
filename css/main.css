@@ -127,22 +127,17 @@ article p {
   padding-right: 5px;
 }
 
+.middle-gallery>div,
+.gallery>div,
+.stacked-overlay-parent {
+  position: relative;
+}
+
 .overlay-wrapper {
   width: 200px;
   margin: 20px auto;
   position: relative;
   overflow: hidden;
-}
-
-.overlay {
-  background-color: white;
-  position: absolute;
-  z-index: 1;
-  top: 145.25%;
-  left: 1;
-  width: 66%;
-  height: 84.5%;
-  cursor: pointer;
 }
 
 .fade {
@@ -162,10 +157,10 @@ article p {
   background-color: white;
   position: absolute;
   z-index: 1;
-  top: 145.25%;
-  right: 1;
-  width: 33%;
-  height: 42%;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 }
 
@@ -190,6 +185,17 @@ article p {
   right: 1;
   width: 33%;
   height: 42%;
+  cursor: pointer;
+}
+
+.overlay {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 101%;
   cursor: pointer;
 }
 
@@ -265,7 +271,7 @@ article p {
   overflow: hidden;
 }
 
-.middle-overlay-left {
+/* .middle-overlay-left {
   background-color: white;
   position: absolute;
   z-index: 1;
@@ -274,8 +280,7 @@ article p {
   width: 49.50%;
   height: 63.25%;
   cursor: pointer;
-}
-
+} */
 .middle-overlay-right {
   background-color: white;
   position: absolute;
@@ -390,7 +395,6 @@ footer nav a {
 
 .fab {
   font-size: 30px;
-  transform: translate(-650%, 180%);
 }
 
 .fab:hover {
@@ -519,7 +523,7 @@ footer nav a {
 
 @media (max-width: 768px) {
   nav {
-    /* display: none; */
+    display: none;
     width: 100%;
     height: 100%;
     z-index: 100;
@@ -528,6 +532,7 @@ footer nav a {
     right: 0;
     left: 0;
     bottom: 0;
+    background: white;
   }
 
   .hamburger {
@@ -572,8 +577,13 @@ footer nav a {
     text-align: center;
     width: 100%;
     height: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+  }
+
+  main h2 {
+    padding-bottom: 5px;
   }
 
   .na-gallery {
@@ -589,7 +599,7 @@ footer nav a {
   }
 
   .swiper-container {
-    max-height: 45vh;
+    max-height: 50vh;
   }
 
   .myname {
@@ -598,10 +608,6 @@ footer nav a {
     word-spacing: 2px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .fab {
-    font-size: 25px;
   }
 
   hr {

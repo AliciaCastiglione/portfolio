@@ -16,9 +16,9 @@ var mySwiper = new Swiper('.swiper-container', {
 })
 
 $(".hamburger").on('click', function() {
-  $("nav").fadeToggle('slow');
+  $(".nav").fadeToggle('slow');
 });
 
 $(".close").on('click', function() {
-  $("nav").fadeOut('slow');
+  $(".nav").fadeOut('slow');
 });

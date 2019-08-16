@@ -20,9 +20,9 @@
   <header>
     <h1>Alicia Castiglione</h1>
   </header>
-
+  <button href="#" class="hamburger"><i class="fas fa-bars"></i></button>
   <nav class="nav">
-    <button href="#" class="hamburger"><i class="fas fa-bars"></i></button>
+
     <button class="close"><i class="fas fa-times"></i></button>
     <a href="#">Home</a>
     <a href="#about">About</a>
@@ -87,22 +87,26 @@
         <div class="overlay fade">Positano, Italy</div>
       </div>
       <div>
-        <img class="top-image" "top-overlay" src="img/IMG_8065.jpg" alt="Italy">
-        <div class="top-overlay fade-in">Atrani, Italy</div>
+        <div class="stacked-overlay-parent">
+          <img class="top-image" "top-overlay" src="img/IMG_8065.jpg" alt="Italy">
+          <div class="overlay fade-in">Atrani, Italy</div>
+        </div>
 
-        <img class="bottom-right" src="img/IMG_8003.jpg" alt="Amalfi">
-        <div class="bottom-overlay fade-bottom">Amalfi, Italy</div>
+        <div class="stacked-overlay-parent">
+          <img class="bottom-right" src="img/IMG_8003.jpg" alt="Amalfi">
+          <div class="overlay fade-bottom">Amalfi, Italy</div>
+        </div>
       </div>
     </div>
 
     <div class="middle-gallery">
       <div>
         <img class="middle-wrapper-left" src="img/IMG_8000.jpg" alt="Amalfi">
-        <div class="middle-overlay-left fade-middle-left">Amalfi, Italy</div>
+        <div class="top-overlay fade-middle-left">Amalfi, Italy</div>
       </div>
       <div>
         <img class="middle-wrapper-right" src="img/IMG_8149.jpg" alt="Positano">
-        <div class="middle-overlay-right fade-middle-right">Positano, Italy</div>
+        <div class="top-overlay fade-middle-right">Positano, Italy</div>
       </div>
     </div>
 

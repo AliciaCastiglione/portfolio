@@ -100,10 +100,15 @@ section h2 {
   margin-top: 75px;
 }
 
+.nohover {
+  pointer-events: none;
+}
+
 main h2 {
   margin-bottom: 50px;
   letter-spacing: 3px;
   font-size: 35px;
+  pointer-events: none;
 }
 
 article p {
@@ -129,6 +134,7 @@ article p {
 
 .middle-gallery>div,
 .gallery>div,
+.middle-wrapper>div,
 .stacked-overlay-parent {
   position: relative;
 }
@@ -138,6 +144,28 @@ article p {
   margin: 20px auto;
   position: relative;
   overflow: hidden;
+}
+
+.overlay {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.top-overlay {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .fade {
@@ -153,17 +181,6 @@ article p {
   font-weight: 900;
 }
 
-.top-overlay {
-  background-color: white;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
 .fade-in {
   opacity: 0;
 }
@@ -177,28 +194,6 @@ article p {
   font-weight: 900;
 }
 
-.bottom-overlay {
-  background-color: white;
-  position: absolute;
-  z-index: 1;
-  top: 187.75%;
-  right: 1;
-  width: 33%;
-  height: 42%;
-  cursor: pointer;
-}
-
-.overlay {
-  background-color: white;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 101%;
-  cursor: pointer;
-}
-
 .fade-bottom {
   opacity: 0;
 }
@@ -209,6 +204,49 @@ article p {
   font-size: 30px;
   color: #878685;
   padding-top: 120px;
+  font-weight: 900;
+}
+
+.middle-wrapper {
+  width: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.middle-overlay {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.fade-middle-left {
+  opacity: 0;
+}
+
+.middle-overlay-left:hover {
+  transition: all 1s ease-in-out;
+  opacity: .75;
+  font-size: 30px;
+  color: #878685;
+  padding-top: 220px;
+  font-weight: 900;
+}
+
+.fade-middle-right {
+  opacity: 0;
+}
+
+.middle-overlay-right:hover {
+  transition: all 1s ease-in-out;
+  opacity: .75;
+  font-size: 30px;
+  color: #878685;
+  padding-top: 220px;
   font-weight: 900;
 }
 
@@ -257,65 +295,6 @@ article p {
   display: block;
   margin-top: 2px;
   min-height: 100%;
-}
-
-.middle-wrapper-left {
-  width: 700px;
-  position: relative;
-  overflow: hidden;
-}
-
-.middle-wrapper-right {
-  width: 700px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* .middle-overlay-left {
-  background-color: white;
-  position: absolute;
-  z-index: 1;
-  top: 244.2%;
-  right: 1;
-  width: 49.50%;
-  height: 63.25%;
-  cursor: pointer;
-} */
-.middle-overlay-right {
-  background-color: white;
-  position: absolute;
-  z-index: 1;
-  top: 244.2%;
-  right: 0.25;
-  width: 49.50%;
-  height: 63.25%;
-  cursor: pointer;
-}
-
-.fade-middle-left {
-  opacity: 0;
-}
-
-.fade-middle-right {
-  opacity: 0;
-}
-
-.middle-overlay-left:hover {
-  transition: all 1s ease-in-out;
-  opacity: .75;
-  font-size: 30px;
-  color: #878685;
-  padding-top: 220px;
-  font-weight: 900;
-}
-
-.middle-overlay-right:hover {
-  transition: all 1s ease-in-out;
-  opacity: .75;
-  font-size: 30px;
-  color: #878685;
-  padding-top: 220px;
-  font-weight: 900;
 }
 
 .bottom-gallery {
@@ -385,7 +364,6 @@ article p {
 }
 
 hr {
-  margin-bottom: -25px;
   margin-top: 50px;
 }
 
@@ -497,7 +475,6 @@ footer nav a {
 }
 
 .myname {
-  padding-top: 15px;
   letter-spacing: 2px;
   color: #535252;
   word-spacing: 30px;
@@ -518,6 +495,10 @@ footer nav a {
 }
 
 .close {
+  display: none;
+}
+
+.hide-desktop {
   display: none;
 }
 
@@ -548,9 +529,15 @@ footer nav a {
     display: block;
     position: absolute;
     right: 20px;
-    top: 60px;
+    top: 25px;
     font-size: 20px;
     border: none;
+  }
+
+  nav a {
+    display: block;
+    padding-top: 85px;
+    transform: translateY(125px);
   }
 
   .gallery {

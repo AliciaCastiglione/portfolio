@@ -267,10 +267,9 @@ article p {
   margin-bottom: 4px;
 }
 
-.left-image {
-  min-height: 100%;
-}
-
+/* .left-image { */
+/* min-height: 100%; */
+/* } */
 .na-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

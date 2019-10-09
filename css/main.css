@@ -11,6 +11,10 @@ Base styles:
 }
 
 /* Fix for responsive images */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway Dots', cursive;
   font-weight: 600;

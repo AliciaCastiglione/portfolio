@@ -256,12 +256,18 @@ article p {
 
 .gallery img {
   max-width: 100%;
-  background-size: cover;
+  min-height: 100%;
+  height: auto;
+  width: auto;
   display: block;
+  background-size: cover;
 }
 
 .na-gallery img {
   max-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
   background-size: cover;
   display: block;
 }
@@ -293,6 +299,9 @@ article p {
 
 .middle-gallery img {
   max-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
   background-size: cover;
   display: block;
   margin-top: 2px;
@@ -310,6 +319,9 @@ article p {
 
 .bottom-gallery img {
   max-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
   background-size: cover;
   display: block;
 }

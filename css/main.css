@@ -256,7 +256,6 @@ article p {
 
 .gallery img {
   max-width: 100%;
-  min-height: 100%;
   height: auto;
   width: auto;
   display: block;
@@ -265,7 +264,6 @@ article p {
 
 .na-gallery img {
   max-width: 100%;
-  min-height: 100%;
   height: auto;
   width: auto;
   background-size: cover;
@@ -299,7 +297,6 @@ article p {
 
 .middle-gallery img {
   max-width: 100%;
-  min-height: 100%;
   height: auto;
   width: auto;
   background-size: cover;
@@ -319,7 +316,6 @@ article p {
 
 .bottom-gallery img {
   max-width: 100%;
-  min-height: 100%;
   height: auto;
   width: auto;
   background-size: cover;

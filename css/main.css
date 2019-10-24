@@ -593,9 +593,13 @@ footer nav a {
     grid-row-gap: 4px;
   }
 
+  .main_h2 {
+    font-family: 'Raleway', sans-serif;
+  }
+
   main h2 {
     font-family: 'Raleway Dots', cursive;
-    font-weight: 800;
+    font-weight: 900;
     color: #535252;
     margin-top: 30px;
     margin-bottom: 30px;
